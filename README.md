@@ -31,20 +31,15 @@ Ideal para projetos pessoais, portfólios ou para quem está aprendendo a desenv
 
 ---
 
-## 📂 Estrutura
+## 📂 Estrutura de Arquivos
 
-📁 formulario-validacao/
-
-├── index.html          # Estrutura do formulário
-
-├── estilo.css          # Estilização do layout
-
-├── reset.css           # Reset padrão de CSS
-
-├── script.js           # Validação com JavaScript puro
-
-└── imagens/
-    ├── background.jpg  # Imagem de fundo
+| Arquivo / Pasta         | Descrição                         |
+|-------------------------|-----------------------------------|
+| `index.html`            | Estrutura do formulário           |
+| `estilo.css`            | Estilização do layout             |
+| `reset.css`             | Reset padrão de CSS               |
+| `script.js`             | Validação com JavaScript puro     |
+| `imagens/background.jpg`| Imagem de fundo                   |
 
     
 ---
