@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário com Validação</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="texto">
+          <h1>
+            FICOU COM DÚVIDA? <br />
+            NOS MANDE UMA MENSAGEM!
+          </h1>
+          <p>
+            Caso tenha ficado com qualquer dúvida, basta nos mandar uma mensagem
+            e entraremos em contato em menos de 24h.
+          </p>
+        </div>
+
+        <form class="formulario" id="formulario" novalidate>
+          <div class="campo">
+            <label for="nome"></label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome completo *"
+              class="nome"
+            />
+            <p class="aviso">Campo obrigatório</p>
+          </div>
+
+          <div class="campo">
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email *"
+              class="email"
+            />
+            <p class="aviso">Campo obrigatório</p>
+          </div>
+
+          <div class="campo">
+            <label for="telefone"></label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="Telefone *"
+              class="telefone"
+            />
+            <p class="aviso">Campo obrigatório</p>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem"></label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Mensagem *"
+              class="mensagem"
+            ></textarea>
+            <p class="aviso">Campo obrigatório</p>
+          </div>
+
+          <p class="obrigatorios">*Campos obrigatórios</p>
+          <button type="submit" class="botao" id="botao">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./src/js/validação.js"></script>
+  </body>
+</html>

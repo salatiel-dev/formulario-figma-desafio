@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+main {
+    background-image: url('../imagens/bg-repeat.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.container .texto {
+    flex: 1 1 300px;
+    margin: 0;
+    color: #fff;
+}
+
+.container .texto h1 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.container .texto p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container .formulario {
+    flex: 1 1 350px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+}
+
+.container .formulario .campo {
+    margin-bottom: 15px;
+}
+
+.container .formulario label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.container .formulario input,
+.container .formulario textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.container .formulario input:focus,
+.container .formulario textarea:focus {
+    border-color: #3CCC87;
+    outline: none;
+}
+
+textarea::placeholder,
+input::placeholder {
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+.container .formulario textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.container .formulario .aviso {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    height: 14px;
+}
+
+.container .formulario .aviso.visivel {
+    opacity: 1;
+}
+
+.container .formulario .obrigatorios {
+    font-size: 14px;
+    margin: 15px 0;
+    color: #666;
+}
+
+.container .formulario .botao {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #3CCC87;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container .formulario .botao:hover,
+.container .formulario .botao:focus {
+    background-color: #33b570;
+    outline: none;
+}
+
+.formulario input.errado,
+.formulario textarea.errado {
+    border-color: #e74c3c !important;
+    box-shadow: 0 0 5px #e74c3c;
+}
+
+.formulario input.certo,
+.formulario textarea.certo {
+    border-color: #27ae60 !important;
+    box-shadow: 0 0 5px #27ae60;
+}
